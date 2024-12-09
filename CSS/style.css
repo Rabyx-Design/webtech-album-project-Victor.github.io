@@ -288,6 +288,7 @@ body{
     border-radius: 10px;
     background-color: #eaeaea;
     margin-bottom: 30px;
+    gap: 30px;
 }
 
 .card img{

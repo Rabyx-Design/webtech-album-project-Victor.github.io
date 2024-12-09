@@ -107,7 +107,7 @@ body{
 .info-container{
     background-color: #ffffff;
     margin: 120px;
-    margin-bottom: 40px;
+
 }
 
 .info-container h1,
@@ -203,12 +203,18 @@ body{
     font-size: 24px;
 }
 
-.main-card{
+.container,
+.gallery{
     display: flex;
-    align-items: center;
+    margin:100px auto;
+    width: 85%;
     justify-content: center;
-    gap: 35px;
-    padding-bottom: 120px;
+}
+
+.main-card{
+    width: 325px;
+    margin: 10px;
+    background-color: #fff;
 
 }
 
@@ -271,13 +277,6 @@ body{
     margin-left: 50px;
 }
 
-.gallery{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
 .card{
     width: 300px;
     height: 500px;
@@ -352,3 +351,12 @@ body{
     display: inline-block;
     padding: 10px;
 }
+
+@media screen and (max-width: 768px){
+    .container, .gallery{
+        flex-direction: column;
+    }
+    .main-card, .card{
+        width: calc(100% - 40px)
+    }
+} 

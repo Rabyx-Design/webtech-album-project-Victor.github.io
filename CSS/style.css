@@ -358,7 +358,9 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    .container, .gallery{
+    .container, 
+    .gallery,
+    .info-container{
         flex-direction: column;
     }
     .main-card, .card{
